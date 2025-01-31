@@ -46,7 +46,14 @@ sc.close();
     }
 public void deleteBegin()
 {
-// TYPE YOUR CODE HERE
+if(head==null)
+System.out.println("List is empty");
+else
+{
+Node temp=head;
+head=head.next;
+System.out.println("Deleted Element is:"+temp.data);
+}
 }
 public void displayList() {
         Node current = head;
